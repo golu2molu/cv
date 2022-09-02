@@ -5,9 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <style>
+        *{
+            margin:0px;
+            
+        }
+        .page{
+            background-color:aliceblue;
+        }
+        .full{
+            width:55%;
+            margin: auto;
+            padding:3%;
+            border:2px solid black;
+            background-color:white;            
+        }
+        
+        #center{
+            text-align: center;
+        }
+        #buttongo{
+            padding:10px;
+            background-color: #A8D7FF;
+            border-radius: 10%;
+        }
+        #buttongo:hover{
+            background-color:lightgreen;
+            cursor: pointer;
+        }
+        .lines {
+            border-collapse: collapse;
+        }
+        .lines tr {
+            border-bottom: 1px solid black;
+        }
+        
+        th, td {
+            padding: 5px;
+        }
+        #cover th,#cover td{
+            padding:0;
+        }
+        hr{
+            border:0.5px solid black;
+            background: black;
+        }
+    </style>
 </head>
+
 <body>
-    <table style="width:100%">
+    <div class="page">
+    <div class="full">
+    <table id="cover" style="width:100%">
         <tr>
             <td rowspan="5"><img src="https://img.collegepravesh.com/2017/05/SGSITS-Indore-Logo.png" alt="college logo" srcset="" height="110px"></td>
             <td><b>Name:Avni Dosi</b></td>
@@ -26,7 +75,7 @@
             <td><b>Specialization: None</b></td>
         </tr>
         <tr>
-            <td><b>Email ID : avnidosi123@gmail.com</b></td>
+            <td><b>Email ID : <a href="#">avnidosi123@gmail.com</a></b></td>
             <td><b>Mobile : +91 6261009753</b></td>
         </tr>
     </table>
@@ -34,7 +83,7 @@
 
     <b><h3>Academic Details</h3></b>
     <hr>
-    <table style="width:100%">
+    <table class="lines" style="width:100%">
         <!-- <caption><b><h3>Academic Details</h3></b></caption> -->
         <tr>
             <th align="left">Degree/Certificate</th>
@@ -69,8 +118,8 @@
     
     <br>
     <h3>Semester – wise results in SGPA</h3></b>
-    <hr>
-    <table style="width:100%">
+    <hr> 
+    <table class="lines" style="width:100%">
         <!-- <caption><b><h3>Semester – wise results in SGPA</h3></b></caption> -->
         
         <tr>
@@ -205,7 +254,7 @@
                 <td>
                     <ul>
                         <li>A website to connect Ecobrick Consumers and Ecobrick Producers and to 
-                            aware people about Ecobricks .
+                            aware people about <br> Ecobricks .
                             </li>
                         <li>It is developed using PostgreSQL ,Node js , Bootstrap .<a href="https://ecobricks.herokuapp.com/">Visit here</a></li>
                     </ul>
@@ -365,7 +414,13 @@
 
     </table>
     <br><br>
-    Please fill this form in case of any Query<br><br>
-    <a href="query.html" target="_blank"><input type="submit" value="Query"></a>
+</div>
+<br>
+    <p id="center">
+        Please fill this form in case of any Query<br><br>
+        <a href="query.html" target="_blank"><input id="buttongo" type="submit" value="Query"></a>
+    </p>
+    <br>
+</div>
 </body>
 </html>
